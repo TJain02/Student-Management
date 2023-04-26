@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="./student-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="search-area">
+            <div class="quick-profile">
+                <button onclick="toggleMenu()">
+                    <img src="/Image/5-52097_avatar-png-pic-vector-avatar-icon-png-transparent.png" alt="/">
+                </button>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/Image/5-52097_avatar-png-pic-vector-avatar-icon-png-transparent.png" alt="/">
+                            <h3>Student Name</h3>
+                        </div>
+                        <hr>
+                        <div class="sub-menu-info">
+                            <h4>Department: CSBS</h4>
+                            <h4>Autonomy Roll No.: 126200170XX</h4>
+                            <h4>College Roll No.: 20600XX</h4>
+                            <h4>College Mail Id: student@college.in</h4>
+                        </div>
+                        <a href="#">
+                            <button class="change-pswrd">Change Password</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="sideMenu" id="sideMenu">
+        <ul>
+            <li class="logo-area">
+                <a onclick="toggleSideMenu()" href="#" class="logo">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </a>
+                <span class="nav-logo-title">Student Dashboard</span>
+            </li>
+            <li><a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="nav-item">Add Personal Info</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="nav-item">Add Acaemic Details</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-medal"></i>
+                    <span class="nav-item">Add MAR Points</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <span class="nav-item">Leave Request</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-sharp fa-solid fa-circle-info"></i>
+                    <span class="nav-item">Query</span>
+                </a></li>
+            <!-- <li><a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-item">Home</span>
+            </a></li> -->
+            <li><a href="#" class="logout">
+                    <i class="fa-solid fa-sign-out-alt"></i>
+                    <span class="nav-item">Log out</span>
+                </a></li>
+        </ul>
+    </nav>
+    <div class="main-page">
+        <div class="admin-image">
+            <img src="/Image/5-52097_avatar-png-pic-vector-avatar-icon-png-transparent.png" alt="admin-image">
+        </div>
+        <div class="admin-info">
+            <p><span class="detail-type">Name: </span> Student Name</p>
+            <p><span class="detail-type">Department: </span>CSBS</p>
+            <p><span class="detail-type">Autonomy Roll No.: </span>126200170XX</p>
+            <p><span class="detail-type">Registration NO.: </span>20126013XXXX</p>
+            <p><span class="detail-type">College Roll No.: </span>20600XX</p>
+            <p><span class="detail-type">Mobile No.: </span>9800012345</p>
+            <p><span class="detail-type">College Email Id: </span>student@college.in</p>
+            <p><span class="detail-type">Email Id:: </span>student@student.com</p>
+            <p><span class="detail-type">Year of Joining: </span>2020</p>
+        </div>
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+        let sideMenu = document.getElementById("sideMenu");
+
+        function toggleSideMenu() {
+            sideMenu.classList.toggle("side-menu-clicked");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/8bd17400cf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

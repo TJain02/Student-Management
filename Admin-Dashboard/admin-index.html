@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./admin-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="search-area">
+            <input class="search-bar" type="text" placeholder="Search...">
+            <button class="search-btn">
+                <i class="fa-sharp fa-solid fa-magnifying-glass search-btn-txt"></i>
+            </button>
+            <div class="quick-profile">
+                <div>
+                    <button><img src="/Image/5-52097_avatar-png-pic-vector-avatar-icon-png-transparent.png"
+                            alt="/"></button>
+                    <div class="quick-info">
+                        <p>Name: Admin Sir/Ma'am</p>
+                        <p>Department:CSBS</p>
+                        <p>Year of Joining:2005</p>
+                        <p>Experience:20 years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <nav class="sideMenu" id="sideMenu">
+        <ul>
+            <li class="logo-area">
+                <a onclick="toggleSideMenu()" href="#" class="logo">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </a>
+                <span class="nav-logo-title">Admin Dashboard</span>
+            </li>
+            <li><a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="nav-item">Student Info</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="nav-item">Student Acaemics</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-medal"></i>
+                    <span class="nav-item">Student MAR Points</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <span class="nav-item">Leave Details</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-sharp fa-solid fa-circle-info"></i>
+                    <span class="nav-item">Query</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
+                    <span class="nav-item">Report</span>
+                </a></li>
+            <li><a href="#" class="logout">
+                    <i class="fa-solid fa-sign-out-alt"></i>
+                    <span class="nav-item">Log out</span>
+                </a></li>
+        </ul>
+    </nav>
+    <div class="main-page">
+        <div class="admin-image">
+            <img src="/Image/5-52097_avatar-png-pic-vector-avatar-icon-png-transparent.png" alt="admin-image">
+        </div>
+        <div class="admin-info">
+            <p><span class="detail-type">Name: </span> Admin Sir/Ma'am</p>
+            <p><span class="detail-type">Designation: </span>Head of Department</p>
+            <p><span class="detail-type">Department: </span>CSBS</p>
+            <p><span class="detail-type">Mobile No.: </span>9800012345</p>
+            <p><span class="detail-type">Email Id: </span>admin@admin.com</p>
+            <p><span class="detail-type">Year of Joining: </span>2005</p>
+            <p><span class="detail-type">Experience: </span>20 years</p>
+        </div>
+    </div>
+    <script>
+        let sideMenu = document.getElementById("sideMenu");
+
+        function toggleSideMenu() {
+            sideMenu.classList.toggle("side-menu-clicked");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/8bd17400cf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

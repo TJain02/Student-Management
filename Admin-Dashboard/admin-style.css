@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --header-color: #312e81;
+    --primary-color: #3730a3;
+    --shadow-color: rgb(155, 155, 155);
+    --secondary-color: #eef2ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: rgb(242, 242, 242);
+}
+
+.sideMenu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 285px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo .fa-bars {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.nav-logo-title {
+    margin: 10px 10px 0 10px;
+    width: 100rem;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--header-color);
+}
+
+a {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fa-solid {
+    position: relative;
+    width: 65px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 5px;
+}
+
+a:hover {
+    background: #eee;
+}
+
+.side-menu-clicked {
+    width: 80px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+.search-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    position: fixed;
+    width: 99%;
+    height: 80px;
+    top: 0;
+    overflow: hidden;
+    background: white;
+    justify-self: flex-end;
+    margin: 1rem;
+    margin-top: 0;
+    box-shadow: 0.5rem 0 0.5rem var(--shadow-color);
+}
+
+.search-bar {
+    background-color: white;
+    height: 2.5rem;
+    border: 0.01rem solid var(--primary-color);
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    width: 25rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3),
+        inset 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn {
+    margin-right: 17rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 14px;
+    text-align: center;
+    height: 2.5rem;
+    display: flex;
+    width: 4rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn-txt {
+    color: var(--secondary-color);
+    font-size: medium;
+}
+
+.quick-profile button {
+    cursor: pointer;
+}
+
+.quick-profile button {
+    text-decoration: none;
+    background-color: transparent;
+
+}
+
+.quick-profile img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: var(--primary-color) solid 0.5px;
+    justify-self: center;
+}
+
+.quick-info {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem;
+    position: fixed;
+    right: 2vw;
+    z-index: 1;
+    font-size: 12px;
+    width: max-content;
+    cursor: pointer;
+    display: none;
+}
+
+.quick-profile button:hover+.quick-info {
+    display: block;
+}
+
+.quick-profile button:active+.quick-info {
+    display: block;
+}
+
+.main-page {
+    position: absolute;
+    top: 25vh;
+    left: 25%;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.5rem 0rem rgb(155, 155, 155);
+}
+
+.admin-image img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: var(--primary-color) solid;
+    margin: 5rem;
+}
+
+.admin-info {
+    font-size: 20px;
+    color: rgb(85, 83, 83);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    letter-spacing: 1px;
+    width: max-content;
+}
+
+.detail-type {
+    color: var(--header-color);
+}
